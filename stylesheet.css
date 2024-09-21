@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", "Helvetica Neue";
+}
+
+header {
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    font-size: 25px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+}
+nav .ham{
+    font-size: 2.3rem;
+    display: none;
+    color: black;
+}
+nav {
+    margin: 0 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(185, 184, 184, 0.486);
+    border-bottom: 1px solid rgba(185, 184, 184, 0.486);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+.search .bi{
+    position: relative;
+    right: 12%;
+    top: auto;
+    transition: all 0.3s ease;
+}
+.search .bi:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.search input {
+    position: relative;
+    border: 1px solid rgba(65, 65, 65, 0.548);
+    padding: 5px;
+    border-radius: 5px;
+    height: 2.3rem;
+}
+
+.search button {
+    letter-spacing: 1px;
+    padding: 10px;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #d90700;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.search button:hover {
+    background-color: black;
+}
+
+/* Responsive Header Section */
+.container {
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .left {
+    flex: 1;
+    max-width: 550px;
+    padding: 1rem 0;
+}
+
+.container .left h1 {
+    font-size: 4rem;
+    line-height: 1;
+    margin: 2rem 0;
+}
+.container .left .lorem{
+    font-size: .8rem;
+    font-weight: 400;
+}
+.container .left .help{
+    font-size: .8rem;
+    font-weight: 800;
+    margin: 3.8rem 0 1rem 0;
+}
+.container .left button{ 
+    position: absolute;
+    letter-spacing: 1px;
+    padding: 1rem 1.5rem;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #d90700;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s ease;
+    margin: 1.5rem 0 1rem 0;
+}
+.container .left button:hover{
+    background-color: black;
+}
+.container .left img{
+    margin: 7rem 0 1rem 0;
+}
+
+.container .right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Responsive Section for Subscribe */
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(250, 235, 215, 0.315);
+    width: 100%;
+    height: 50vh;
+    padding: 20px;
+}
+
+.Subscribe {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px 0 rgba(187, 187, 187, 0.589);
+    padding: 4rem 2rem;
+}
+
+.Subscribe .mail {
+    display: flex;
+    max-width: 500px;
+    justify-content: end;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.Subscribe .mail input{
+    max-width: 500px;
+    padding: 1rem;
+    width: 60%;
+}
+.Subscribe .mail button{
+    letter-spacing: 1px;
+    padding: 1rem 1.5rem;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #d90700;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+.Subscribe .mail button:hover{
+    background-color: black;
+}
+
+/* Responsive Advertising Image */
+.adv {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.adv img {
+    margin: 5rem 0;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 20px 0 rgba(114, 114, 114, 0.548);
+    transition: all 0.3s ease;
+}
+
+.adv img:hover {
+    transform: scale(1.01);
+    border: 1px solid rgba(61, 61, 61, 0.918);
+}
+
+/* Responsive Popular Categories */
+.pop-cat {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.pop-cat h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+.conta {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.conta img {
+    width: 100%;
+    border-radius: 1rem;
+    filter: brightness(65%);
+}
+
+.conta h3 {
+    position: absolute;
+    transform: translate(50px, -70px);
+    font-size: 25px;
+    color: white;
+}
+
+.pop-cat .btn {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.pop-cat button{
+    border: none;
+    background-color: #d90700;
+    outline: none;
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 0.8rem 1.3rem;
+    height: 2.8rem;
+    border-radius: 5px ;
+    transition: all 0.3s ease;
+}
+.pop-cat button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+/* Responsive Podcast Section */
+
+.podcast{
+    margin: 4rem 0;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.podcast h1 {
+    margin: 0 0 4rem 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.podcast .contai {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.podcast .jen {
+    width: 290px;
+    border-radius: 1rem;
+    padding: 0 0 0 1.2rem;
+    background-color: rgba(218, 200, 200, 0.315);
+}
+.podcast .jen img{
+    float: right;
+    border-top-right-radius: 1rem ; 
+}
+.podcast .jen h3{
+    font-size: 18px;
+    color: #d90700;
+    padding: 3rem 0;
+}
+.podcast .jen .eps{
+    padding: 1.5rem 0;
+    font-size: 13px;
+    font-weight: 500;
+}
+.podcast .jen .matter{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 1rem 1.2rem 0;
+}
+.podcast .jen .bi{
+    font-size: 60px;
+    color: #d90700;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+.podcast .jen .bi:hover{
+    color: black;
+    cursor: pointer;
+}
+.podcast .jen .img{ 
+    width: 290px;
+    height: 350px;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+.podcast .jen .img:hover{
+    opacity: 0.8;
+}
+
+
+/* Responsive Footer */
+footer {
+    padding: 2rem;
+    background-color: rgba(128, 128, 128, 0.082);
+}
+
+.nav {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(185, 184, 184, 0.486);
+    border-bottom: 1px solid rgba(185, 184, 184, 0.486);
+    padding: 2rem;
+}
+
+.nav .nav-ele,
+.nav .social-ele {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.nav .nav-ele a{
+    font-size: 13px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+.nav .social-ele{
+    gap: 3rem !important;
+}
+.nav .nav-ele li,
+.nav .social-ele li{
+    list-style: none;
+} 
+.nav .nav-ele a,
+.nav .social-ele a{
+    text-decoration: none;
+    color: black;
+}
+.nav .nav-ele a:hover{
+    color: #d90700;
+}
+.nav .social-ele a:hover{
+    color: #d90700;
+}
+footer .email {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem auto;
+    border-bottom: 1px solid rgba(185, 184, 184, 0.486);
+}
+footer .email h1{
+    font-size: 18px;
+    margin: 1rem 0 2rem 0;
+}
+footer .flex{
+    max-width: 700px;
+    margin: 2rem auto;
+    gap: 1rem;
+    display: flex;
+    
+}
+
+footer input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(107, 106, 106, 0.404);
+}
+
+footer button {
+    padding: 0.5rem 1.8rem;
+    height: 2.7rem;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+footer button:hover{
+    background-color: black;
+}
+
+footer h6 {
+    text-align: center;
+    margin-top: 1rem;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .Subscribe {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .podcast .contai {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .Subscribe .mail button{
+        width: 100%;
+    }
+    .Subscribe .mail input{
+        width: 100%;
+    }
+    footer .flex{
+        flex-direction: column;
+    }
+    header .search input{
+        margin-left: 2rem;
+    }
+    footer .nav{
+        flex-direction: column;
+    }
+    nav .ham{
+        display: block;
+    }
+    nav ul{
+        display: none;
+        top: 10%;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+    }
+    nav ul li{
+        width: 100%;
+    }
+    nav ul li a{
+        color: white;
+        text-align: center;
+        font-size: 16px;
+    }
+}
